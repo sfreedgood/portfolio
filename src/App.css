@@ -26,6 +26,7 @@
 .section-container {
   height: 80vh;
   padding-top: 10vh;
+  overflow: hidden;
 }
 
 @keyframes App-logo-spin {
