@@ -1,17 +1,33 @@
 import React from "react"
-import projectData from "../projectData"
 
-const scribblrImg = projectData[0].img
-const zaruttoImg = projectData[2].img
+const scribblrImg = require("../assets/Scribblr.png")
+const zaruttoImg = require("../assets/Zarutto.png")
+// const pickAPark = require("../assets/PickAPark.png")
 
 const ProjectDetail = (props) => {
-  console.log("../assets/Scribblr.png")
+  // for loop to compare img string against variable name
+  // check to see if better way to require imgs in use case
+  const getImg = (img) => {
+    const targetUrl = img
+    switch (targetUrl) {
+      case 'Scribblr':
+        return scribblrImg
+      case 'Zarutto':
+        return zaruttoImg
+      // case 'PickAPark':
+      //   return pickAPark
+      //   break
+      default:
+        return null
+    }
+  }
+
   return(
       <div className="project-container">
         <h3 className="project-title">{props.projectInfo.title}</h3>
-        <img src={scribblrImg} alt=""/>
+        {/* <img src={img} alt=""/> */}
         <div className="project-info">
-          <img src={props.projectInfo.img} alt="" className="project-img"/>
+          <img src={getImg(props.projectInfo.img)} alt="" className="project-img"/>
           <p className="project-description">
           {props.projectInfo.description}
           </p>

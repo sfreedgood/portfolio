@@ -1,6 +1,6 @@
 import React from "react"
 import ProjectDetail from "./ProjectDetail";
-import projectData from "../projectData"
+import projectData from "./projectData"
 
 const Projects = () => {
   const projects = projectData.map((el, key) => {

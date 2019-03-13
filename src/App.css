@@ -38,11 +38,12 @@
 .project-info {
   display: flex;
   flex-flow: wrap;
+  justify-content: center;
 }
 
 .project-img {
-  justify-self: flex-start;
-  align-self: flex-start;
+  /* justify-self: flex-start; */
+  /* align-self: flex-start; */
 }
 
 @keyframes App-logo-spin {
