@@ -26,7 +26,23 @@
 .section-container {
   height: 80vh;
   padding-top: 10vh;
-  overflow: hidden;
+  padding-bottom: 10vh;
+  overflow: scroll;
+}
+
+.contact-container {
+  height: 80vh;
+  padding-bottom: 0;
+}
+
+.project-info {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.project-img {
+  justify-self: flex-start;
+  align-self: flex-start;
 }
 
 @keyframes App-logo-spin {
