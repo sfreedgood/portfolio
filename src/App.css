@@ -35,14 +35,41 @@
   padding-bottom: 0;
 }
 
-.project-info {
+.project-container {
+  width: 90%;
+  margin: 2% auto 5% auto;
+  
+}
+
+.info-container {
   display: flex;
+  overflow: hidden;
+}
+
+.project-info {
+  height: 20vh;
+  display: flex;
+  padding: 0 0 0 3%;
   flex-flow: wrap;
   justify-content: center;
+  overflow: auto;
+}
+
+.project-description {
+  overflow: auto;
+  padding-bottom: 0;
+}
+
+.project-link {
+  align-self: flex-end;
+  text-decoration: none;
+  color: black;
+  background-color: antiquewhite;
 }
 
 .project-img {
-  /* justify-self: flex-start; */
+  height: 20vh;
+  justify-self: flex-start;
   /* align-self: flex-start; */
 }
 
@@ -53,4 +80,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media only screen 
+  and (max-device-width: 600px) {
+    .info-container {
+      flex-flow: wrap;
+    }
+
+    .project-info {
+      height: inherit;
+      padding: 0;
+      justify-content: center;
+    }
+
+    .project-img {
+      justify-self: center;
+    }
 }
