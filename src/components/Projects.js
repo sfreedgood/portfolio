@@ -9,7 +9,7 @@ const Projects = () => {
 
   return(
     <div id={"projects"}>
-      <div className="section-container">
+      <div className="dark-primary-color section-container">
         <h1>I am the Projects page</h1>
         {projects}
       </div>

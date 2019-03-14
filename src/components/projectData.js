@@ -12,9 +12,9 @@ const projectData = [
     img: ""
   },
   {
-    title: "Zarruto",
+    title: "Zurutto",
     url: "http://zarutto.surge.sh/",
-    description: "",
+    description: `Working with a team of UX designers, we rebuilt the website for the restaurant Zarutto using best practices. To see the existing version of their website please visit https://www.zurutto.com/`,
     img: "Zarutto"
   },
 ]

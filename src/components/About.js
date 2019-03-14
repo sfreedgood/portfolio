@@ -4,7 +4,7 @@ const About = () => {
   
   return(
     <div id={"about"}>
-      <div className="section-container">
+      <div className="dark-primary-color section-container">
         <h1>I am the About page</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum quam iusto ipsum facere, minima odio ducimus aperiam consequatur? Iure, autem unde. Ducimus id ullam nesciunt culpa, magni eius dolore labore!</p>
         <p>Et libero, sequi temporibus velit quas, possimus incidunt odit, culpa praesentium hic perspiciatis? Necessitatibus quis tempore laborum fuga culpa perferendis perspiciatis nihil, modi quae corrupti ipsum enim ullam. Ipsa, dolore?</p>

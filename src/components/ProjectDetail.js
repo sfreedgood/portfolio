@@ -23,16 +23,16 @@ const ProjectDetail = (props) => {
   }
 
   return(
-      <div className="project-container">
-        <h3 className="project-title">{props.projectInfo.title}</h3>
+      <div className="default-primary-color project-container">
         <div className="info-container">
           <img src={getImg(props.projectInfo.img)} alt="" className="project-img"/>
           <div className="project-info">
+          <h3 className="project-title">{props.projectInfo.title}</h3>
             <p className="project-description">
             {props.projectInfo.description}
             </p>
             <a href={props.projectInfo.url} target={"_blank"}
-            className="project-link">View Project</a>
+            className="accent-color project-link">View Project</a>
           </div>
         </div>
       </div>
