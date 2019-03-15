@@ -1,6 +1,7 @@
 import React, {Component} from "react"
 const linkedInLogo = require('../assets/linkedin-icon-png--1600.png')
 const gitHubLogo = require('../assets/github-free-icon-512.png')
+const emailLogo = require('../assets/584856b4e0bb315b0f7675ac.png')
 export default class Contact extends Component {
   state = {
     viewEmail: false
@@ -51,19 +52,24 @@ export default class Contact extends Component {
               </div>
             </a>
             {
+              this.state.viewEmail &&
+              <div className="email accent-color">
+                  sam.freedgood@gmail.com
+              </div>
+            }
+            
+            {
               !this.state.viewEmail &&
-            <div>
-              <p className="contact-btn accent-color"
-                  onClick={this.showEmail}>
-                Email Sam</p>
+            <div className="contact-btn accent-color"
+                 onClick={this.showEmail}>
+              <img className="email-logo"
+                    src={emailLogo}
+                    alt="email">
+              </img>
+                Email
             </div>
             }
-            {
-              this.state.viewEmail &&
-              <p className="contact-btn email accent-color">
-                sam.freedgood@gmail.com
-              </p>
-            }
+
             {/* <div className="email-form">
               <input name="user_email"
                     placeholder="Your Email"

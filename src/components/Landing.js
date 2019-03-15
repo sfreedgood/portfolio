@@ -3,8 +3,8 @@ import React from "react"
 const Landing = () => {
 
   return(
-    <div>
-      <h1>I am the Landing page</h1>
+    <div className="landing">
+      <h1 className="landing-text">Sam Freedgood</h1>
     </div>
   )
 }

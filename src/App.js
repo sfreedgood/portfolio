@@ -14,10 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="avatar" />
-          <Landing />
-        </header>
+        <Landing />
         <About />
         <Projects />
         <Contact />
