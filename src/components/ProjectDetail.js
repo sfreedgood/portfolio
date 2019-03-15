@@ -2,11 +2,10 @@ import React from "react"
 
 const scribblrImg = require("../assets/Scribblr.png")
 const zaruttoImg = require("../assets/Zarutto.png")
-// const pickAPark = require("../assets/PickAPark.png")
+const pickAParkImg = require("../assets/PickAPark.png")
 
 const ProjectDetail = (props) => {
-  // for loop to compare img string against variable name
-  // check to see if better way to require imgs in use case
+
   const getImg = (img) => {
     const targetUrl = img
     switch (targetUrl) {
@@ -14,9 +13,8 @@ const ProjectDetail = (props) => {
         return scribblrImg
       case 'Zarutto':
         return zaruttoImg
-      // case 'PickAPark':
-      //   return pickAPark
-      //   break
+      case 'PickAPark':
+        return pickAParkImg
       default:
         return null
     }

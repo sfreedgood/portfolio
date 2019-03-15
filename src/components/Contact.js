@@ -1,19 +1,61 @@
-import React from "react"
+import React, {Component} from "react"
 
-const Contact = () => {
+export default class Contact extends Component {
+  state = {
+    viewEmail: false
+  }
+
+  showEmail = () => {
+    this.setState({
+      viewEmail: true
+    })
+  }
+  // handleFormSubmit = (e) => {
+  //   e.preventDefault()
+
+  // }
+
+  // handleChange = (e) => {
+  //   let field = e.target.name
+  //   let value = e.target.value
+  //   this.setState(prevState => ({
+  //     [field]: value
+  //   }))
+  // }
   
+  render() {
+    return(
+      <div id={"contact"}>
+        <div className="dark-primary-color contact-container section-container">
+          <h1>Contact Sam</h1>
+          <p><a href = "http://linkedin.com/samfreedgood">LinkedIn</a></p>
+          <p><a href = "http://github.com/sfreedgood">GitHub</a></p>
+          {
+            !this.state.viewEmail &&
+            <button onClick={this.showEmail}>Email Sam</button>
+          }
+          {
+            this.state.viewEmail &&
+            <p>sam.freedgood@gmail.com</p>
+          }
+          {/* <div className="email-form">
+            <input name="user_email"
+                   placeholder="Your Email"
+                   type="string" 
+                   onChange={this.handleChange}/>
+            <input name="user_subject"
+                   placeholder="Subject"
+                   type="string" 
+                   onChange={this.handleChange}/>
+            <input name="user_content"
+                   placeholder="Message"
+                   type="text" 
+                   onChange={this.handleChange}/>
+            <button onClick={this.handleFormSubmit} />
+          </div> */}
 
-  return(
-    <div id={"contact"}>
-      <div className="dark-primary-color contact-container section-container">
-        <h1>I am the Contact page</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum quam iusto ipsum facere, minima odio ducimus aperiam consequatur? Iure, autem unde. Ducimus id ullam nesciunt culpa, magni eius dolore labore!</p>
-        <p>Et libero, sequi temporibus velit quas, possimus incidunt odit, culpa praesentium hic perspiciatis? Necessitatibus quis tempore laborum fuga culpa perferendis perspiciatis nihil, modi quae corrupti ipsum enim ullam. Ipsa, dolore?</p>
-        <p>Cum corporis, voluptatibus in quis consequatur, consectetur distinctio cupiditate ullam harum similique vero. Eveniet nisi, eaque maiores perspiciatis praesentium, rerum expedita, fugiat asperiores illum blanditiis dolorum laudantium quibusdam dolores ea.</p>
-        <p>Tempore, vitae reiciendis maiores molestiae aliquid, sit nisi impedit mollitia animi porro exercitationem sequi in, dicta numquam aperiam voluptates at quidem fugiat quaerat architecto itaque perspiciatis? Praesentium id qui accusamus.</p>
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
-
-export default Contact
