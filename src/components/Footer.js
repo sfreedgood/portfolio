@@ -1,13 +1,15 @@
 import React from "react"
-import "./footer.css"
+const copyrightLogo = require("../assets/PinClipart.com_jail-clipart-black-and_826375.png")
 
 const Footer = () => {
 
   return(
     <div className="footer-container">
-      <p>c</p>
-      <p>Sam Freedgood</p>
-      <p>2019</p>
+        <img className="copyright-logo"
+          src={copyrightLogo}
+          alt="copyright">
+        </img>
+        <span>2019 | Sam Freedgood</span>
     </div>
   )
 }
