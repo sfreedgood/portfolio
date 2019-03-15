@@ -3,6 +3,8 @@ import React from "react"
 const scribblrImg = require("../assets/Scribblr.png")
 const zaruttoImg = require("../assets/Zarutto.png")
 const pickAParkImg = require("../assets/PickAPark.png")
+const gitHubLogo = require("../assets/github-free-icon-512.png")
+const externalLinkLogo = require("../assets/external_link.png")
 
 const ProjectDetail = (props) => {
 
@@ -29,8 +31,29 @@ const ProjectDetail = (props) => {
             <p className="project-description">
             {props.projectInfo.description}
             </p>
-            <a href={props.projectInfo.url} target={"_blank"}
-            className="accent-color project-link">View Project</a>
+            <div className="project-link-container">
+              <a href={props.projectInfo.url} 
+                target={"_blank"}>
+                <div className="accent-color project-link">
+                    <img className="media-logo"
+                        src={externalLinkLogo}
+                        alt="github">
+                    </img>
+                    View Project
+                </div>
+              </a>
+
+              <a href = "http://github.com/sfreedgood"
+                target={"_blank"}>
+                <div className="accent-color project-link">
+                  <img className="media-logo"
+                      src={gitHubLogo}
+                      alt="github">
+                  </img>
+                  View Code
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>

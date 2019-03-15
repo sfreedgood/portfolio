@@ -32,7 +32,7 @@ a {
   height: 80vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .contact-container {
@@ -40,17 +40,25 @@ a {
   padding-bottom: 0;
 }
 
+.contact-links-container {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .project-container {
   height: 20vh;
   width: 90%;
   margin: 2% auto 5% auto;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .info-container {
   display: flex;
   overflow: hidden;
-  border: 2%;
+  border: .2vw solid;
   border-color: #BDBDBD;
 }
 
@@ -69,8 +77,21 @@ a {
   margin: 0 4vw;
 }
 
+.project-link-container {
+  display: flex;
+  flex-flow: wrap-reverse;
+  justify-content: space-around;
+  align-content: space-around;
+  width: 80%;
+}
+
 .project-link {
+  height: 5vh;
+  font-size: 1rem;
   align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: black;
   margin: 1vh;
@@ -83,15 +104,28 @@ a {
   /* align-self: flex-start; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-btn {
+  width: 20vw;
+  height: 10vh;
+  font-size: 2rem;
+  border: .2vw solid;
+  border-color: #BDBDBD;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
 }
 
+.media-logo {
+  height: 80%;
+  margin: 0 1.5vw 0 .5vw;
+}
+
+.email {
+  width: inherit;
+  padding: 0 2vh;
+}
+
+/* Media Queries */
 @media only screen 
   and (max-device-width: 600px) {
     .project-container {
