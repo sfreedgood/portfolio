@@ -7,7 +7,7 @@ const projectData = [
   },
   {
     title: "Pick A Park",
-    url: "",
+    url: "https://exp.host/@sfreedgood12/pickapark",
     description: "Pick A Park is a native mobile app that allows users to find pertinent information about National Parks in their selected area. Pulling data from the National Park Service, registered users can save preferred information to their accounts for future reference.",
     img: ""
   },
