@@ -51,6 +51,13 @@ export default class Contact extends Component {
                 GitHub
               </div>
             </a>
+            <a href = "https://resume.creddle.io/resume/a0apl0kcm3f"
+               target={"_blank"}>
+              <div className="contact-btn accent-color">
+                  Resume
+              </div>
+            </a>
+
             {
               this.state.viewEmail &&
               <div className="email accent-color">
