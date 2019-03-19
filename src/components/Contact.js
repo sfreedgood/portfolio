@@ -2,6 +2,7 @@ import React, {Component} from "react"
 const linkedInLogo = require('../assets/linkedin-icon-png--1600.png')
 const gitHubLogo = require('../assets/github-free-icon-512.png')
 const emailLogo = require('../assets/584856b4e0bb315b0f7675ac.png')
+const externalLinkLogo = require("../assets/external_link.png")
 export default class Contact extends Component {
   state = {
     viewEmail: false
@@ -36,7 +37,7 @@ export default class Contact extends Component {
               <div className="contact-btn accent-color">
                   <img className="media-logo"
                        src={linkedInLogo}
-                       alt="linkedIn">
+                       alt="link to linkedIn">
                   </img>
                   LinkedIn
               </div>
@@ -46,7 +47,7 @@ export default class Contact extends Component {
               <div className="contact-btn accent-color">
                 <img className="media-logo"
                      src={gitHubLogo}
-                     alt="github">
+                     alt="link to github">
                 </img>
                 GitHub
               </div>
@@ -54,7 +55,11 @@ export default class Contact extends Component {
             <a href = "https://resume.creddle.io/resume/a0apl0kcm3f"
                target={"_blank"}>
               <div className="contact-btn accent-color">
-                  Resume
+                <img className="media-logo"
+                     src={externalLinkLogo}
+                     alt="link to resume">
+                </img>
+                Resume
               </div>
             </a>
 

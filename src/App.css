@@ -87,7 +87,6 @@ a {
 
 .about-content {
   margin: 0 3vw;
-
   text-align: justify;
   max-width: 570px;
 }
@@ -100,16 +99,16 @@ a {
 .contact-links-container {
   height: 60vh;
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .project-container {
-  height: 20vh;
+  min-height: 20vh;
   width: 90%;
   margin: 2% auto 5% auto;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .info-container {
@@ -132,6 +131,24 @@ a {
   overflow: auto;
   padding-bottom: 0;
   margin: 0 4vw;
+}
+
+.tech-list {
+  width: 85%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.tech-title {
+  margin-bottom: 1vh;
+  width: 80%;
+}
+
+.tech-item {
+  min-width: 45%;
+  text-align: start;
+  margin: 1% 2%;
 }
 
 .project-link-container {
@@ -163,10 +180,10 @@ a {
 
 .contact-btn {
   height: 10vh;
-  max-height: 40px;
-  max-width: 50px;
+  max-height: 15vh;
+  /* max-width: 40vw; */
   padding: 2vw 5vw;
-  font-size: 1.25rem;
+  font-size: 200%;
   border: .2vw solid;
   border-color: #BDBDBD;
   display: flex;
@@ -206,6 +223,7 @@ a {
   and (max-device-width: 600px) {
     .project-container {
       height: 50vh;
+      overflow: auto;
     }
 
     .info-container {

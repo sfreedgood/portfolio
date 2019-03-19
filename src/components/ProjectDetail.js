@@ -8,6 +8,15 @@ const externalLinkLogo = require("../assets/external_link.png")
 
 const ProjectDetail = (props) => {
 
+  let tech = props.projectInfo.technologies
+  let techList = tech.map((el, key) => {
+    return (
+      <span key={key} className="tech-item">
+        • {el}
+      </span>
+    )
+  })
+  
   const getImg = (img) => {
     const targetUrl = img
     switch (targetUrl) {
@@ -31,6 +40,10 @@ const ProjectDetail = (props) => {
             <p className="project-description">
             {props.projectInfo.description}
             </p>
+            <h4 className="tech-title">Technologies</h4>
+            <div className="tech-list">
+              {techList}
+            </div>
             <div className="project-link-container">
               <a href={props.projectInfo.url} 
                 target={"_blank"}>
