@@ -33,13 +33,15 @@ const ProjectDetail = (props) => {
 
   return(
       <div className="default-primary-color project-container">
+        <h3 className="project-title">{props.projectInfo.title}</h3>
         <div className="info-container">
-          <img src={getImg(props.projectInfo.img)} alt="" className="project-img"/>
-          <div className="project-info">
-          <h3 className="project-title">{props.projectInfo.title}</h3>
+          <div className="project-overview">
+            <img src={getImg(props.projectInfo.img)} alt="" className="project-img"/>
             <p className="project-description">
-            {props.projectInfo.description}
+              {props.projectInfo.description}
             </p>
+          </div>
+          <div className="project-info">
             <h4 className="tech-title">Technologies</h4>
             <div className="tech-list">
               {techList}

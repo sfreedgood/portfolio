@@ -30,7 +30,7 @@ export default class Contact extends Component {
     return(
       <div id={"contact"}>
         <div className="dark-primary-color contact-container section-container">
-          <h1>Contact Sam</h1>
+          <h1>Contact</h1>
           <div className="contact-links-container">
             <a href = "https://www.linkedin.com/in/sam-freedgood/"
                target={"_blank"}>

@@ -5,7 +5,7 @@ const About = () => {
   return(
     <div id={"about"}>
       <div className="dark-primary-color section-container">
-        <h1>About Sam</h1>
+        <h1>About Me</h1>
         <div className="about-content-container">
         <p className="about-content">
           Since a young age I have had a penchant for exploration, whether it be physical adventure or mental growth and it has driven me to extraordinary places. During my time at Gonzaga University in Spokane, WA, I made the most of the opportunities presented to me. Graduating with a BA in Psychology and a concentration in leadership studies, I relished exploring behavior, as well as new places, spending a total of 7 months (3 summer sessions) researching chimpanzees and volunteering in Zambia.
