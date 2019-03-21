@@ -11,9 +11,9 @@ const ProjectDetail = (props) => {
   let tech = props.projectInfo.technologies
   let techList = tech.map((el, key) => {
     return (
-      <span key={key} className="tech-item">
+      <p key={key} className="tech-item">
         • {el}
-      </span>
+      </p>
     )
   })
   
