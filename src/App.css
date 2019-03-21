@@ -179,7 +179,7 @@ a {
 }
 
 .project-img {
-  height: 20vh;
+  height: 20vw;
   margin-top: 2vw;
 }
 
@@ -223,7 +223,7 @@ a {
 
 /* Media Queries */
 @media only screen 
-  and (max-device-width: 600px) {
+  and (max-device-width: 550px) {
     .info-container {
       display: flex;
       flex-flow: column wrap;
@@ -244,6 +244,7 @@ a {
     }
 
     .project-img {
+      height: 20vh;
       margin-top: 2vh;
       justify-self: center;
     }
