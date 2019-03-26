@@ -62,13 +62,6 @@ a {
   border-top: .25vh solid #DFDCE3;
 }
 
-/* .footer-btn {
-  text-decoration: none;
-  padding: 1%;
-  border-radius: 50%;
-  background-color: blanchedalmond;
-} */
-
 .section-container {
   padding-top: 10vh;
   padding-bottom: 10vh;
@@ -137,6 +130,7 @@ a {
 .project-description {
   width: 80%;
   margin: 2vw auto;
+  text-align: justify;
 }
 
 .tech-list {
@@ -222,6 +216,7 @@ a {
 }
 
 /* Media Queries */
+
 @media only screen 
   and (max-device-width: 550px) {
     .info-container {

@@ -1,8 +1,9 @@
 import React from "react"
+import ReactPlayer from 'react-player'
 
 const scribblrImg = require("../assets/Scribblr.png")
 const zaruttoImg = require("../assets/Zarutto.png")
-const pickAParkImg = require("../assets/PickAPark.png")
+const pickAParkImg = require("../assets/PickAParkDemoPart1.mov")
 const gitHubLogo = require("../assets/github-free-icon-512.png")
 const externalLinkLogo = require("../assets/external_link.png")
 
@@ -36,7 +37,20 @@ const ProjectDetail = (props) => {
         <h3 className="project-title">{props.projectInfo.title}</h3>
         <div className="info-container">
           <div className="project-overview">
-            <img src={getImg(props.projectInfo.img)} alt="" className="project-img"/>
+            { 
+              props.projectInfo.img === 'PickAPark' ?
+                <ReactPlayer
+                  style={{marginTop: "2vw", marginBottom: "2vw"}}
+                  width={"100%"}
+                  height={"50vh"}
+                  controls={true}
+                  loop={true}
+                  light={true}
+                  url={getImg(props.projectInfo.img)}
+                />
+              :
+              <img src={getImg(props.projectInfo.img)} alt="" className="project-img"/>
+            }
             <p className="project-description">
               {props.projectInfo.description}
             </p>
