@@ -1,9 +1,7 @@
 import React from "react"
-import ReactPlayer from 'react-player'
 
 const scribblrImg = require("../assets/Scribblr.png")
 const zaruttoImg = require("../assets/Zarutto.png")
-const pickAParkImg = require("../assets/PickAParkDemoPart1.mov")
 const gitHubLogo = require("../assets/github-free-icon-512.png")
 const externalLinkLogo = require("../assets/external_link.png")
 
@@ -26,7 +24,7 @@ const ProjectDetail = (props) => {
       case 'Zarutto':
         return zaruttoImg
       case 'PickAPark':
-        return pickAParkImg
+        return console.log("check logic, video should be loaded")
       default:
         return null
     }
@@ -39,15 +37,15 @@ const ProjectDetail = (props) => {
           <div className="project-overview">
             { 
               props.projectInfo.img === 'PickAPark' ?
-                <ReactPlayer
-                  style={{marginTop: "2vw", marginBottom: "2vw"}}
-                  width={"100%"}
-                  height={"50vh"}
-                  controls={true}
-                  loop={true}
-                  light={true}
-                  url={getImg(props.projectInfo.img)}
-                />
+              <div className="video-container">
+                <iframe 
+                    title="Pick A Park Demo"
+                    src="https://www.youtube.com/embed/s2EC2W3c3WQ"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen>
+                </iframe>
+              </div>
               :
               <img src={getImg(props.projectInfo.img)} alt="" className="project-img"/>
             }
