@@ -31,8 +31,9 @@ const ProjectDetail = (props) => {
   }
 
   return(
-      <div className="default-primary-color project-container">
-        <h3 className="project-title">{props.projectInfo.title}</h3>
+      <div className="gainsboro project-container">
+        <h3 className="project-title dark-gray">{props.projectInfo.title}
+        </h3>
         <div className="info-container">
           <div className="project-overview">
             { 

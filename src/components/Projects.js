@@ -8,11 +8,9 @@ const Projects = () => {
   })
 
   return(
-    <div id={"projects"}>
-      <div className="dark-primary-color section-container">
-        <h1>Projects</h1>
+      <div id="projects" className="section-container">
+        <h1 className={"default-primary-color section-title"}>Projects</h1>
         {projects}
-      </div>
     </div>
   )
 }
