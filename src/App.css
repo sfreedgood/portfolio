@@ -57,7 +57,6 @@ a {
   text-decoration: none;
   padding: 1% 2%;
   border-radius: 5%;
-  background-color: #DFDCE3;
 }
 
 .footer-container {
@@ -327,6 +326,6 @@ a {
 
 .dark-gray { background-color: rgba(179, 180, 177, 1); }
 .gainsboro { background-color: rgba(236, 230, 225, .8); }
-.default-primary-color { background-color: rgba(84, 108, 140, .85); }
+.default-primary-color { background-color: rgba(136, 220, 250, 0.85); }
 .dim-gray { background-color: #624E5A; }
 .dark-slate-gray { background-color: #141318; }
