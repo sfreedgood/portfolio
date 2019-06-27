@@ -4,7 +4,7 @@ const projectData = [
     url: "https://exp.host/@sfreedgood12/pickapark",
     description: "Pick A Park is a native mobile app that allows users to find pertinent information about National Parks in their selected area. Pulling data from the National Park Service, registered users can save preferred information to their accounts for future reference.",
     img: "PickAPark",
-    technologies: ["React-Native", "Expo", "React-Native-Navigation", "Express", "Sequelize", "PostgreSQL", "Bcrypt", "JsonWebTokens", "Heroku"]
+    technologies: ["React-Native", "Expo", "React-Native-Navigation", "Express", "Sequelize", "PostgreSQL", "Bcrypt", "JsonWebTokens", "AWS (EC2 & RDS)"]
   },
   {
     title: "Scribblr",
@@ -16,10 +16,10 @@ const projectData = [
   {
     title: "Zurutto",
     url: "http://zarutto-test.surge.sh/",
-    description: `Working with a team of UX designers, we rebuilt the website for the restaurant Zarutto using best practices. To see the existing version of their website please visit https://www.zurutto.com/`,
+    description: 'Working with a team of UX designers, we rebuilt the website for the restaurant Zarutto using best practices.',
     img: "Zarutto",
     github: "https://github.com/sfreedgood/Zurutto",
-    technologies: ["React", "Zeplin", "React-Bootstrap", "Surge"]
+    technologies: ["React", "Zeplin", "React-Bootstrap", "Ruby on Rails", "Heroku", "Surge"]
   },
 ]
 

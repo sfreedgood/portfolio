@@ -29,10 +29,12 @@ export default class Contact extends Component {
   render() {
     return(
       <div id="contact" className="contact-container">
-        <h1 className={"default-primary-color section-title"}>Contact</h1>
+        <h1 className={"default-primary-color section-title"}>
+          Contact
+        </h1>
         <div className="contact-links-container">
           <a href = "https://www.linkedin.com/in/sam-freedgood/"
-              target={"_blank"}>
+             target={"_blank"}>
             <div className="contact-btn accent-color">
                 <img className="media-logo"
                       src={linkedInLogo}
@@ -42,7 +44,7 @@ export default class Contact extends Component {
             </div>
           </a>
           <a href = "http://github.com/sfreedgood"
-              target={"_blank"}>
+             target={"_blank"}>
             <div className="contact-btn accent-color">
               <img className="media-logo"
                     src={gitHubLogo}
@@ -52,7 +54,7 @@ export default class Contact extends Component {
             </div>
           </a>
           <a href = "https://resume.creddle.io/resume/a0apl0kcm3f"
-              target={"_blank"}>
+             target={"_blank"}>
             <div className="contact-btn accent-color">
               <img className="media-logo"
                     src={externalLinkLogo}
@@ -71,14 +73,14 @@ export default class Contact extends Component {
           
           {
             !this.state.viewEmail &&
-          <div className="contact-btn accent-color"
-                onClick={this.showEmail}>
-            <img className="email-logo"
-                  src={emailLogo}
-                  alt="email">
-            </img>
-              Email
-          </div>
+            <div className="contact-btn accent-color"
+                  onClick={this.showEmail}>
+              <img className="email-logo"
+                    src={emailLogo}
+                    alt="email">
+              </img>
+                Email
+            </div>
           }
 
           {/* <div className="email-form">
