@@ -2,6 +2,7 @@ import React from "react"
 
 const scribblrImg = require("../assets/Scribblr.png")
 const zaruttoImg = require("../assets/Zarutto.png")
+const nomadzImg = require("../assets/Nomadz.png")
 const gitHubLogo = require("../assets/github-free-icon-512.png")
 const externalLinkLogo = require("../assets/external_link.png")
 
@@ -23,6 +24,8 @@ const ProjectDetail = (props) => {
         return scribblrImg
       case 'Zarutto':
         return zaruttoImg
+      case 'Nomadz':
+        return nomadzImg
       case 'PickAPark':
         return console.log("check logic, video should be loaded")
       default:
