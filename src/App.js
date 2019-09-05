@@ -14,8 +14,8 @@ class App extends Component {
       <div className="App background-img">
         <NavBar />
         <Landing />
-        <About />
         <Projects />
+        <About />
         <Contact />
         <Footer />
       </div>

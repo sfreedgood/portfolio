@@ -64,7 +64,7 @@ export default class Contact extends Component {
             </div>
           </a>
 
-          {
+          {/* {
             this.state.viewEmail &&
             <div className="email accent-color">
                 sam@samfreedgood.dev
@@ -72,16 +72,17 @@ export default class Contact extends Component {
           }
           
           {
-            !this.state.viewEmail &&
-            <div className="contact-btn accent-color"
-                  onClick={this.showEmail}>
+            !this.state.viewEmail && */}
+            <a href="mailto: sam@samfreedgood.dev" className="contact-btn accent-color"
+                  // onClick={this.showEmail}
+                  >
               <img className="email-logo"
                     src={emailLogo}
                     alt="email">
               </img>
                 Email
-            </div>
-          }
+            </a>
+          {/* } */}
 
           {/* <div className="email-form">
             <input name="user_email"

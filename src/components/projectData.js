@@ -1,10 +1,10 @@
 const projectData = [
   {
     title: "Nomadz",
-    url: "http://nomadz_beta.surge.sh",
-    description: "A meta-search website designed to make travel information more accessible and convenient for Generation-Z users",
+    url: "http://nomadz.us",
+    description: "A meta-search website designed to make traveling easy and personal, by providing a free tool for anyone who has a dream to see the world. Traveling changes us - it helps us understand that together, we are part of something greater: a global community.",
     img: "Nomadz",
-    technologies: ["React", "Redux", "React-Router"]
+    technologies: ["React", "Redux", "React-Router", "SEO", "HostGator"]
   },
   {
     title: "Pick A Park",
