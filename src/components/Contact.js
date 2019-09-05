@@ -73,7 +73,7 @@ export default class Contact extends Component {
           
           {
             !this.state.viewEmail && */}
-            <a href="mailto: sam@samfreedgood.dev" className="contact-btn accent-color"
+            <a href="mailto: sam@samfreedgood.dev" target="_blank" rel="noopener noreferrer" className="contact-btn accent-color"
                   // onClick={this.showEmail}
                   >
               <img className="email-logo"
